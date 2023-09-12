@@ -1,0 +1,24 @@
+{
+  "name": "styling-scratchpad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozgursarikamis/styling-scratchpad.git"
+  },
+  "author": "Ozgur Sarikamis <ozgur.sarikamis@smoothwall.com> (http://smoothwall.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozgursarikamis/styling-scratchpad/issues"
+  },
+  "homepage": "https://github.com/ozgursarikamis/styling-scratchpad#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+}
