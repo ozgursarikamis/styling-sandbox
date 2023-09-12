@@ -20,6 +20,12 @@
 @each $color, $value in variables.$theme-colors {
   .text-color-#{$color} {
     color: $value;
+  
+    &:hover {
+      color: wheat;
+      background-color: $value;
+      opacity: 0.8;
+    }
   }
 }
 
