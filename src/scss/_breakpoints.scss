@@ -35,3 +35,38 @@ $breakpoints: (
         @content;
     }
 }
+
+
+// simpler way:
+
+@mixin breakpoint($bp: 0) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+
+// Usage:
+
+.responsive-test {
+    background-color: red;
+    @include xs {
+        background-color: orange;
+        color: red;
+    }
+    @include sm {
+        background-color: yellow;
+        color: navy;
+    }
+    @include md {
+        background-color: green;
+        color: yellow;
+    }
+    @include lg {
+        background-color: blue;
+        color: white;
+    }
+    @include xl {
+        background-color: purple;
+        color: wheat;
+    }
+}
