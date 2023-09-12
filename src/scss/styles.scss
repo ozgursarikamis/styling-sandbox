@@ -9,6 +9,14 @@
   color: variables.$orangered;
 }
 
+@each $name, $glyph in variables.$icons {
+  .icon-#{$name}{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    content: $glyph;
+  }
+}
+
 /*
 
 Difference between @use and @import:
