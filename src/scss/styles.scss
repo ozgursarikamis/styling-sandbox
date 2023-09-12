@@ -4,6 +4,13 @@
 
 @use "sass:math";
 
+@debug 'debugging...';
+
+
+@debug "E" + math.$e;
+@debug "RESULT: " + math.div(10px, 2px);
+@debug "RESULT: " + math.div(10px, 2px);
+
 .appTitle {
   padding: 1rem;
   border-bottom: 1.5px solid variables.$deepskyblue;
