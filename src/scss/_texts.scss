@@ -1,5 +1,6 @@
 @for $i from 1 through 4 {
     .text-#{$i} {
         font-size: $i * 1rem;
+        background-color: mix(orangered, yellow, $i * 10);
     }
 }
