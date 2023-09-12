@@ -1,12 +1,24 @@
+@use "./functions";
+
+$fonts: "Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif";
+
+$height: 10rem;
+$width: 5;
+
+.rectangle {
+    width: functions.multiply-with-ten(50px);
+    border: 1px solid black;
+}
+
 @for $i from 1 through 4 {
     .text-#{$i} {
         font-size: $i * 1rem;
-        background-color: mix(orangered, yellow, $i * 10);
-
         @if $i % 2 == 0 {
             font-weight: bold;
-        } @else {
-            color: yellow;
+            color: deeppink;
+        }
+        @else {
+            color: light-comp(orangered);
         }
     }
 }
