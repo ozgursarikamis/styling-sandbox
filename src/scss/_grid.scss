@@ -1,0 +1,35 @@
+@use "sass:math";
+@use "./breakpoints";
+
+$grid-columns: 12;
+
+// base layout classes:
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// column classes:
+
+@include breakpoints.xs {
+
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-xs {
+            box-sizing: border-box;
+            flex-grow: 0; // so that it doesn't grow to fill the space
+            width: math.div(100% * $i, $grid-columns);
+            border: 0.5px solid orangered;
+            text-align: center;
+            background-color: lightblue;
+        }
+    }
+}
