@@ -2,6 +2,7 @@
 @use "./typography";
 @use "./variables";
 
+@use "sass:math";
 
 .appTitle {
   padding: 1rem;
@@ -20,6 +21,7 @@
 @each $color, $value in variables.$theme-colors {
   .text-color-#{$color} {
     color: $value;
+    border-bottom: math.div(variables.$base-border-thickness, 4) dotted $value;
   
     &:hover {
       color: wheat;
