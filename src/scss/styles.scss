@@ -1,10 +1,12 @@
-@use "./reset"; // import an external file
-@import "./variables";
+@use "./reset";
+@use "./typography";
+@use "./variables";
+
 
 .appTitle {
   padding: 1rem;
-  border-bottom: .5px solid $deepskyblue;
-  color: $orangered;
+  border-bottom: 1.5px solid variables.$deepskyblue;
+  color: variables.$orangered;
 }
 
 /*
@@ -30,4 +32,5 @@ Difference between @use and @import:
 
       @import: It's considered a legacy feature and is deprecated in favor of @use.
       @use: This is the recommended way to manage stylesheets and modules in modern SASS projects.
+
 */

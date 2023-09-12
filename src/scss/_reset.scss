@@ -3,8 +3,8 @@
    License: none (public domain)
 */
 
-@import "variables";
-@import "typography";
+@use "./variables";
+@use "./typography";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  font-family: $font-family;
+  font-family: typography.$baloo-da2;
   font-weight: 400;
 }
 ol, ul {
