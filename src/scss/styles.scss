@@ -3,6 +3,8 @@
 @use "./variables";
 @use "./texts";
 
+@use "./breakpoints";
+
 @use "sass:math";
 
 @debug 'debugging...';
