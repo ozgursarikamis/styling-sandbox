@@ -1,7 +1,33 @@
-@import "./reset"; // import an external file
+@use "./reset"; // import an external file
+@import "./variables";
 
 .appTitle {
   padding: 1rem;
   border-bottom: .5px solid $deepskyblue;
   color: $orangered;
 }
+
+/*
+
+Difference between @use and @import:
+
+1. Global scope
+===============
+      @import scope may override the imported file's current scope.
+      @use scope is isolated to the current file.
+
+2. Load order
+=============
+      @import: With @import, the order of imported files matters.
+      Files imported later can override styles defined in earlier imports.
+
+
+      @use: @use ensures a more predictable and modular structure.
+      You can import files in any order, and there's less risk of style conflicts between files.
+
+3. Deprecation
+==============
+
+      @import: It's considered a legacy feature and is deprecated in favor of @use.
+      @use: This is the recommended way to manage stylesheets and modules in modern SASS projects.
+*/
