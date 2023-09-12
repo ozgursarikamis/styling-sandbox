@@ -2,6 +2,12 @@
 @use "./breakpoints";
 
 $grid-columns: 12;
+$grid-gaps: (
+    0: 0,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 1rem
+);
 
 // base layout classes:
 
@@ -16,6 +22,19 @@ $grid-columns: 12;
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+// grid gaps:
+
+@each $key, $value in $grid-gaps {
+    .gap-#{$key} > * { // whatever element it contains
+        padding: $value;
+    }
+
+    .gap-#{$key} {
+        margin-left: -$value;
+        margin-right: -$value;
+    }
 }
 
 // column classes:
