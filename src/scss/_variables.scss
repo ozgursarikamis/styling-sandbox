@@ -1,3 +1,14 @@
 $orangered: orangered;
 $deepskyblue: deepskyblue;
 $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+$theme-colors: (
+    "primary": $orangered,
+    "secondary": $deepskyblue,
+    "success": green,
+    "info": blue,
+    "warning": yellow,
+    "danger": red,
+    "light": #f8f9fa,
+    "dark": #343a40
+)
